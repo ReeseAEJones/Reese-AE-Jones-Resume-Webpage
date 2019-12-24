@@ -1,11 +1,7 @@
-header {
+.header {
     background-color: grey;
 }
 
-body {
+.body {
     background-color: lightblue;
-}
-
-h1 {
-    text-align: center;
 }

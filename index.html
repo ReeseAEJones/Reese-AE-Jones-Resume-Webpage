@@ -1,80 +1,17 @@
-<!DOCTYPE html> 
-<html>
-    <head>
-	<h1>
-	    Reese AE Jones
-	</h1>
-    </head>
-    <body>
-
-	<object data="../README.md" width="300" height="200">
-	    Not supported
-	</object>
-	
-	<p>
-	    I am a software developer from Virginia, and I'm currently studying for my BS in Computer Science at Rochester Institute of Technology in NY.
-	</p>
-	<script>
-	    function readReadMe() {
-	        var file = document.getElementById( 'readMeFile' ).files[0];'
-		if( file ) {
-		    getFileAsText( file );
-		}
-	    }
-	    
-	    function getFileAsText( fileToRead ) {
-	        var reader;
-		try {
-		    reader = new FileReader();
-		} catch( e ) {
-		    document.getElementById( 'readMeOutput' ).innerHTML = "Error: The File API is not supported in your bowser";
-		    return;
-		}
-
-		reader.readAsText( fileToRead, "UTF-8" );
-
-		reader.onLoad = loaded;
-		reader.onerror = errorHandler;
-	    }
-
-	    function updateProgress( evt ) {
-		if ( evt.lengthComputable ) {
-    		    // evt.loaded and evt.total are ProgressEvent properties
-    		    var loaded = ( evt.loaded / evt.total );
-    		    
-		    if ( loaded < 1 ) {
-      		        // Increase the prog bar length
-      		        // style.width = (loaded * 200) + "px";
-	   	        document.getElementById( "bar" ).style.width = ( loaded*100 ) + "%";
-    	            }
-	   	}
-	    }
-
-	    function loaded( evt ) {
-		// Obtain the read file data
-		var fileString = evt.target.result;
-		document.getElementById( 'readMeOutput' ).innerHTML = fileString;
-		document.getElementById( "bar" ).style.width = 100 + "%";
-	    }
-
-	    function errorHandler( evt ) {
-		if( evt.target.error.code == evt.target.error.NOT_READABLE_ERR ) {
-		    // The file could not be read
-		    document.getElementById('readMeOutput').innerHTML = "Error reading file..."
-		}
-	    }
-
-	</script>
-
-	<input id="readMeFile" type="file" multiple onchange="readReadMe()">
-	<h3>Progress:</h3>
-	<div style="width:100%;height:20px;border:1px solid black;">
-	<div id="bar" style="background-color:#45F;width:0px;height:20px;"></div>
-	</div>
-
-	<h3>Github Pages ReadMe:</h3>
-	<pre>
-	    <code id="readMeOutput">
-	    </code>
+<!DOCTYPE html>
+<html lang="en">
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<link rel="stylesheet" type="text/css" href="style.css"> 
+	<head>
+		<meta content="text/html; charset=utf-8;" http-equiv="Content-Type" />
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body class="body">
+		<h1 style="h1">
+			Reese AE Jones
+		</h1>
+		<p>
+			I am a software developer from Virginia, and I'm currently studying for my BS in Computer Science at Rochester Institute of Technology in NY.
+		</p>
     </body>
 </html>
