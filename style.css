@@ -1,3 +1,10 @@
 .body {
-    background-color: lightblue;
+	background-color: #B2B2BC;
+}
+
+.page-title {
+	color: white;
+	background-color: #21212F;
+	text-align: center;
+	padding: 35px;
 }
