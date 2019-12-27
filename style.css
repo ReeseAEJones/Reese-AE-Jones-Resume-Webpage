@@ -4,22 +4,16 @@
 	height: 100%;
 }
 
-.page-title, .page-footer {
-	color: white;
-	background-color: #21212F;
-	text-align: center;
-	padding: 35px;
+.center-column {
+	flex: 70%;
+	background-color: white;
+	padding: 15px;
+	border-width: 1px;
+	border-style: solid;
+	height: 100%;
 }
 
-.page-title {
-	height: 20;
-}
-
-.page-footer {
-	height: 10;
-}
-
-.footerText {
+.footer-text {
 	margin: 0;
 	line-height: 1.45;
 	font-size: xx-small;
@@ -27,21 +21,27 @@
 	color: #333341;
 }
 
-.pageRow {
+.page-footer, .page-title {
+	color: white;
+	background-color: #21212F;
+	text-align: center;
+	padding: 35px;
+}
+
+.page-footer {
+	height: 10;
+}
+
+.page-title {
+	height: 20;
+}
+
+.page-row {
 	display: flex;
 	height: 100vh;
 	padding-bottom: 40px;
 }
 
-.sideColumn {
+.side-column {
 	flex: 15%;
-}
-
-.centerColumn {
-	flex: 70%;
-	background-color: white;
-	padding: 15px;
-	border-width: 1px;
-	border-style: solid;
-	height: 100%;
 }
