@@ -8,15 +8,15 @@ I'm creating this project to improve my skills with:
   - JavaScript
   - General website development
   
-This project is created only from scratch with no special IDEs or code generation tools, so there will probably be quite a lot of commits simply to test simple feaatures.
+This project is created only from scratch with no special IDEs or code generation tools. I am just creating this with vim and a browser.
 
 ## Features
 
 - A single, basic home page
+- A set of tabs to switch between pages
 
 ## Todo
 
-- Create a better home page
-- Create a resume page
-- Create a page to display some of my personal projects
-- Improve the style of the pages
+- Fill out the Home page
+- Fill out my Resume page
+- Fill out the about page
