@@ -6,6 +6,7 @@
 		<meta content="text/html; charset=utf-8;" http-equiv="Content-Type" />
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<title>R-Jones Homepage</title>
+		<script type="text/javascript" src="js/tabs.js"></script>
 	</head>
 	<body class="body">
 		<div class="page-title">
@@ -13,15 +14,24 @@
 				Reese AE Jones
 			</h1>
 			<hr>
+			<div class="tab-buttons">
+				<button id="Home-Tab" class="tab-button" onclick="pickTab( event, 'Home' )">Home</button>
+				<button class="tab-button" onClick="pickTab( event, 'Resume' )">Resume</button>
+				<button class="tab-button" onClick="pickTab( event, 'About' )">About</button>
+			</div>
 		</div>
 		<div>
 			<br>
 			<div class="page-row">
 				<div class="side-column"></div>
-				<div class="center-column">
+				<div id="Home" class="center-column">
 					<p>
 						I am a software developer from Virginia, and I'm currently studying for my BS in Computer Science at Rochester Institute of Technology in NY.
 					</p>
+				</div>
+				<div id="Resume" class="center-column">
+				</div>
+				<div id="About" class="center-column">
 				</div>
 				<div class="side-column"></div>
 			</div>
@@ -32,6 +42,10 @@
 				This is usually where footer text goes, but I don't have any. So I'm putting this message instead as an easter egg to anyone that would actually read this small text at the bottom of the page.
 			</div>
 		</div>
-    </body>
+		<script>
+			openTab( "Home" );
+			document.getElementById( 'Home-Tab' ).className += " active";
+		</script>
+	</body>
 </html>
 

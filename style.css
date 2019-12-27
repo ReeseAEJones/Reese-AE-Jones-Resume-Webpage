@@ -11,6 +11,7 @@
 	border-width: 1px;
 	border-style: solid;
 	height: 100%;
+	display: none;
 }
 
 .footer-text {
@@ -44,4 +45,29 @@
 
 .side-column {
 	flex: 15%;
+}
+
+.tab-button {
+	background-color: inherit;
+	float: center;
+	border: none;
+	outline: none;
+	width: 32%;
+	padding: none;
+}
+
+.tab-button:hover {
+	background-color: #ddd;
+}
+
+.tab-button.active {
+	background-color: #ccc;
+}
+
+.tab-buttons {
+	overflow: hidden;
+	margin: auto;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+	width: 60%;
 }
