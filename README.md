@@ -6,6 +6,7 @@ I'm creating this project to improve my skills with:
   - HTML
   - CSS
   - JavaScript
+  - Jekyll
   - General website development
   
 This project is created only from scratch with no special IDEs or code generation tools. I am just creating this with vim and a browser.
