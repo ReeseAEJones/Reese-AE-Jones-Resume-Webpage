@@ -1,0 +1,3 @@
+# Ignore the building of the site by Jekyll
+
+./_site/
